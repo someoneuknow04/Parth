@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🎉 Parth's Birthday | Pokémon Style</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('https://i.imgur.com/UMJ7qUP.png') repeat; /* Pixel grass bg */
+      font-family: 'Press Start 2P', cursive;
+      color: #fff;
+      text-align: center;
+    }
+
+    .container {
+      padding: 50px 20px;
+    }
+
+    h1 {
+      color: #ffcc00;
+      text-shadow: 2px 2px #000;
+      font-size: 20px;
+      margin-bottom: 40px;
+    }
+
+    .dialogue-box {
+      border: 4px solid #222;
+      background-color: #ffffffcc;
+      color: #000;
+      display: inline-block;
+      padding: 20px;
+      font-size: 10px;
+      width: 90%;
+      max-width: 500px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 4px 4px #000;
+    }
+
+    .poke-btn {
+      display: inline-block;
+      background-color: #ff0000;
+      color: #fff;
+      padding: 10px 20px;
+      border: 3px solid #000;
+      border-radius: 8px;
+      font-size: 10px;
+      cursor: pointer;
+      box-shadow: 3px 3px #000;
+      margin-top: 15px;
+      transition: transform 0.2s ease;
+    }
+
+    .poke-btn:hover {
+      transform: scale(1.05);
+      background-color: #cc0000;
+    }
+
+    .footer {
+      margin-top: 50px;
+      font-size: 8px;
+      color: #ffcc00;
+      text-shadow: 1px 1px #000;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .gift {
+      margin-top: 30px;
+    }
+
+    .gift img {
+      width: 80px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .gift img:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🎂 Happy Birthday, Trainer Parth! 🎂</h1>
+
+    <div class="dialogue-box" id="dialogue">
+      A wild birthday appeared!<br />
+      <strong>Aakash</strong> used <strong>HBD WISH</strong>!<br />
+      It's super effective! 💥<br /><br />
+      🎉 Parth gained +1 year of Coolness! 🎉
+    </div>
+
+    <div class="gift">
+      <p style="font-size: 10px;">Click to open your birthday Pokéball 🎁</p>
+      <img src="https://i.imgur.com/pSBz3xO.png" alt="Pokeball" onclick="revealMessage()" />
+    </div>
+
+    <div class="dialogue-box hidden" id="message">
+      You're not just a funny bestie,<br />
+      you're a LEGEND in the making 🔥<br /><br />
+      May your dropshipping site blast off 🚀<br />
+      like a Charizard on caffeine 😎💼
+    </div>
+
+    <div class="footer">
+      Made with love by Trainer Aakash 💖<br />
+      Gotta wish 'em all!
+    </div>
+  </div>
+
+  <script>
+    function revealMessage() {
+      document.getElementById('message').classList.remove('hidden');
+    }
+  </script>
+</body>
+</html>
